@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+
+*{
+    font-family: "Courier New", "Garamond", serif;
+}
+
+body {
+    background-color: floralwhite;
+}
+
+.querry {
+    border: solid 2px darkcyan;
+    background-color: beige;
+    color: darkmagenta;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#home {
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+}
+
+#question {
+    font-size: 1.2em;
+    color: black;
+}
+
+#trivia div {
+    margin: 20px;
+    padding: 5px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: green;
+}
+
+.navbar-custom {
+  background-color: darkseagreen;
+}
