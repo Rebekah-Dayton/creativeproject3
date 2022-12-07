@@ -76,7 +76,20 @@ h1 {
 .navbar-custom .navbar-text {
   color: green;
 }
+.Container {
+  background-color: darkseagreen !important;
+}
 
-.navbar-custom {
-  background-color: darkseagreen;
+.brand {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+.Navbar {
+  background-color: darkseagreen !important;
 }

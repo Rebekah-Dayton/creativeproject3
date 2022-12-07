@@ -1,31 +1,28 @@
 import { Outlet, Link } from "react-router-dom";
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 const Layout = () => {
   return (
     <>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <Link to="/" class="navbar-brand"> TRIVIA</Link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <Link to="/" class="nav-link">Home <span class="sr-only"></span></Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/TFQuestions" class="nav-link">True/False</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/MultiQuestions" class="nav-link">Mutliple Choice</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="Navbar">
+      <Container className="Container">
+        <Navbar.Brand><Link to="/" className="brand">TRIVIA</Link></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link><Link to="/" className="nav-item">Home</Link></Nav.Link>
+            <Nav.Link><Link to="/TFQuestions" className="nav-item">True/False</Link></Nav.Link>
+            <Nav.Link><Link to="/MultiQuestions" className="nav-item">Multiple Choice</Link></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Layout;
